@@ -1,5 +1,6 @@
 import React from "react";
 import NextLink from "next/link";
+import Image from "next/image";
 import {
   Drawer,
   DrawerBody,
@@ -16,10 +17,8 @@ import {
   HStack,
   Flex,
   Spacer,
-  Avatar,
   VStack,
 } from "@chakra-ui/react";
-import Image from "next/image";
 import { SiGithub, SiDiscord } from "react-icons/si";
 import { AiOutlineMenu } from "react-icons/ai";
 import { FaMoon, FaSun } from "react-icons/fa";

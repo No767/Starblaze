@@ -1,35 +1,16 @@
 import React from "react";
 import NextLink from "next/link";
+import Image from "next/image";
 import {
-  Drawer,
-  DrawerBody,
-  DrawerOverlay,
-  DrawerContent,
-  DrawerCloseButton,
-  IconButton,
-  Show,
-  Hide,
-  useDisclosure,
-  useColorMode,
-  useColorModeValue,
   Button,
-  HStack,
-  Flex,
-  Spacer,
-  Avatar,
   VStack,
-  Heading,
   Center,
   Text,
-  Container,
   SimpleGrid,
   Box,
   Link,
 } from "@chakra-ui/react";
-import Image from "next/image";
 import { SiGithub, SiDiscord } from "react-icons/si";
-import { AiOutlineMenu } from "react-icons/ai";
-import { FaMoon, FaSun } from "react-icons/fa";
 import {
   MdOutlineCollections,
   MdOutlineDashboardCustomize,
