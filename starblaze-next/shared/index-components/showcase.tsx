@@ -8,7 +8,6 @@ import {
   Text,
   SimpleGrid,
   Box,
-  Link,
 } from "@chakra-ui/react";
 import { SiGithub, SiDiscord } from "react-icons/si";
 import {
@@ -67,10 +66,8 @@ export default function IndexShowcase() {
                 10+ Services Integrated
               </Text>
               <Text fontSize="xl" align="center">
-                Rin includes services from AniList, Modrinth, MangaDex,
-                MyAnimeList, Reddit, Twitter, and many more. These have been
-                tested to the strictest standards to ensure that the user
-                experience is of the greatest quality.
+                Rin includes services from AniList, MangaDex, MyAnimeList, and
+                much more.
               </Text>
             </VStack>
             <VStack spacing={5} align="center" justify="center">
@@ -79,15 +76,8 @@ export default function IndexShowcase() {
                 Modular By Design
               </Text>
               <Text fontSize="xl" align="center">
-                Rin is highly portable and can be entirely self-hosted using
-                Docker without any external dependencies. Rin is also designed
-                to serve as a base image, so developers can use Rin to build
-                features on top of it. In fact,{" "}
-                <NextLink href="https://github.com/No767/Kumiko" passHref>
-                  <Link>Kumiko</Link>
-                </NextLink>{" "}
-                is designed to serve more features than Rin, including a economy
-                system, a gacha system, and more.
+                Rin is highly portable and and can be used as a base for many
+                more Discord bots.
               </Text>
             </VStack>
             <VStack spacing={5} align="center" justify="center">
@@ -96,11 +86,7 @@ export default function IndexShowcase() {
                 Free and Open Source
               </Text>
               <Text fontSize="xl" align="center">
-                Rin is also completely free and open source, unlike popular
-                Discord bots, which many if not all are closed source.
-                Ultimately, you as the end user or developer, will be able to
-                have access to these services for free. Rin will always stay
-                free and open source.
+                Rin is also completely free and open source.
               </Text>
             </VStack>
           </SimpleGrid>

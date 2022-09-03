@@ -1,12 +1,13 @@
 import React from "react";
-import { VStack, HStack, Text, Link } from "@chakra-ui/react";
-import { SiChakraui, SiVercel, SiNextdotjs } from "react-icons/si";
+import NextLink from "next/link";
+import { VStack, HStack, Text, Link, SimpleGrid } from "@chakra-ui/react";
+import { SiVercel, SiNextdotjs, SiFastapi } from "react-icons/si";
 
 export default function Footer() {
   return (
     <>
       <VStack pt={100}>
-        <Text>Built with and powered by</Text>
+        <Text px={50}>Built with and powered by</Text>
         <HStack spacing={15}>
           <Link
             href="https://nextjs.org/"
@@ -16,11 +17,11 @@ export default function Footer() {
             <SiNextdotjs size={24} />
           </Link>
           <Link
-            href="https://chakra-ui.com/"
+            href="https://fastapi.tiangolo.com/"
             isExternal
             style={{ textDecoration: "none" }}
           >
-            <SiChakraui size={24} />
+            <SiFastapi size={24} />
           </Link>
           <Link
             href="https://vercel.com/"
@@ -30,8 +31,16 @@ export default function Footer() {
             <SiVercel size={24} />
           </Link>
         </HStack>
-        <Text pt={5} pb={5} align="center">
-          © 2022 - Site Licensed under GPL-3.0
+        <SimpleGrid columns={{ sm: 1, md: 1, lg: 2 }} spacing={5} pt={25}>
+          <NextLink href="/terms-of-service" passHref>
+            <Link>Terms Of Service</Link>
+          </NextLink>
+          <NextLink href="/privacy-policy" passHref>
+            <Link>Privacy Policy</Link>
+          </NextLink>
+        </SimpleGrid>
+        <Text pt={5} pb={5} align="center" px={50}>
+          © 2022 - Licensed under GPL-3.0
         </Text>
       </VStack>
     </>
