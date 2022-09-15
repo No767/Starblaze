@@ -12,27 +12,27 @@
     "format": "pnpm exec prettier --write ."
   },
   "dependencies": {
-    "@chakra-ui/react": "^2.3.1",
-    "@emotion/react": "^11",
-    "@emotion/styled": "^11",
-    "@tanstack/react-query": "^4.2.3",
-    "axios": "^0.27.2",
-    "framer-motion": "^6",
-    "ky": "^0.31.3",
-    "ky-universal": "^0.10.1",
+    "@chakra-ui/react": "2.3.2",
+    "@emotion/react": "11.10.4",
+    "@emotion/styled": "11.10.4",
+    "@tanstack/react-query": "4.3.4",
+    "axios": "0.27.2",
+    "framer-motion": "6.5.1",
+    "ky": "0.31.3",
+    "ky-universal": "0.10.1",
     "next": "12.2.5",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-icons": "^4.4.0"
+    "react-icons": "4.4.0"
   },
   "devDependencies": {
-    "@tanstack/react-query-devtools": "^4.2.3",
+    "@tanstack/react-query-devtools": "4.3.5",
     "@types/node": "18.7.14",
     "@types/react": "18.0.18",
     "@types/react-dom": "18.0.6",
     "eslint": "8.23.0",
     "eslint-config-next": "12.2.5",
-    "husky": "^8.0.0",
+    "husky": "8.0.1",
     "prettier": "2.7.1",
     "typescript": "4.8.2"
   }
