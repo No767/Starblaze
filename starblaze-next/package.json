@@ -17,7 +17,7 @@
     "@emotion/styled": "11.10.4",
     "@tanstack/react-query": "4.3.4",
     "axios": "0.27.2",
-    "framer-motion": "6.5.1",
+    "framer-motion": "7.3.5",
     "ky": "0.31.3",
     "ky-universal": "0.10.1",
     "next": "12.3.0",
