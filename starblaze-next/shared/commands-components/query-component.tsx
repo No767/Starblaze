@@ -4,6 +4,7 @@ import {
   useQuery,
 } from "@tanstack/react-query";
 import axios from "axios";
+import NextLink from "next/link";
 import {
   Tabs,
   TabList,
@@ -25,6 +26,7 @@ import {
   Flex,
   Container,
   Spacer,
+  Center,
 } from "@chakra-ui/react";
 
 const queryClient = new QueryClient();
@@ -37,23 +39,8 @@ export default function QueryComponent() {
   );
 }
 
-function giveBackData(endpoint: string) {
-  const options = {
-    method: "GET",
-    headers: { "Content-Type": "application/json" },
-  };
-  const { isLoading, error, data } = useQuery(["repoData"], () =>
-    axios
-      .get(`https://api.rinbot.live/commands/${endpoint}`, options)
-      .then(function (response) {
-        return response.data;
-      })
-  );
-
-  if (isLoading) return "Loading...";
-  // @ts-ignore
-  else if (error) return error.message;
-  else return data;
+function Capitalize(str: string) {
+  return str.replace(/(^|[\s-])\S/g, (match) => match.toUpperCase());
 }
 
 function DataMain() {
@@ -76,28 +63,20 @@ function DataMain() {
 
   return (
     <div>
-      <Tabs mx={100} pt={50}>
-        <TabList>
-          <Tab>All Commands</Tab>
+      <Center>
+        <SimpleGrid columns={{ sm: 1, md: 3, lg: 7 }} spacing={10} pt={50}>
+          <Button variant="outline" borderColor="gray.500" size="lg">
+            All Commands
+          </Button>
           {Object.keys(data.data).map((key) => (
-            <Tab>{data.data[key]}</Tab>
+            <NextLink href={`/commands/${data.data[key]}`} passHref>
+              <Button variant="outline" borderColor="gray.500" size="lg" as="a">
+                {Capitalize(data.data[key])}
+              </Button>
+            </NextLink>
           ))}
-        </TabList>
-
-        {/* <TabPanels>
-          <TabPanel>
-            {Object.keys(data.data).map((key) => (
-              <VStack spacing={15} pt={25}>
-                <Container borderWidth="1px" borderRadius="lg" maxW="100%">
-                  <Text>{data.data[key].name}</Text>
-                  <Text pt={5}>{data.data[key].description}</Text>
-                  <Text pt={5}>{data.data[key].module}</Text>
-                </Container>
-              </VStack>
-            ))}
-          </TabPanel>
-        </TabPanels> */}
-      </Tabs>
+        </SimpleGrid>
+      </Center>
     </div>
   );
 }
