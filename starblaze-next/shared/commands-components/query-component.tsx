@@ -32,7 +32,7 @@ const queryClient = new QueryClient();
 export default function QueryComponent() {
   return (
     <QueryClientProvider client={queryClient}>
-      <Example />
+      <DataMain />
     </QueryClientProvider>
   );
 }
@@ -56,14 +56,14 @@ function giveBackData(endpoint: string) {
   else return data;
 }
 
-function Example() {
+function DataMain() {
   const options = {
     method: "GET",
     headers: { "Content-Type": "application/json" },
   };
   const { isLoading, error, data } = useQuery(["repoData"], () =>
     axios
-      .get("https://api.rinbot.live/commands/all", options)
+      .get("https://api.rinbot.live/modules/all", options)
       .then(function (response) {
         return response.data;
       })
@@ -79,12 +79,15 @@ function Example() {
       <Tabs mx={100} pt={50}>
         <TabList>
           <Tab>All Commands</Tab>
+          {Object.keys(data.data).map((key) => (
+            <Tab>{data.data[key]}</Tab>
+          ))}
         </TabList>
 
-        <TabPanels>
+        {/* <TabPanels>
           <TabPanel>
             {Object.keys(data.data).map((key) => (
-              <VStack spacing={15} pt={50}>
+              <VStack spacing={15} pt={25}>
                 <Container borderWidth="1px" borderRadius="lg" maxW="100%">
                   <Text>{data.data[key].name}</Text>
                   <Text pt={5}>{data.data[key].description}</Text>
@@ -93,7 +96,7 @@ function Example() {
               </VStack>
             ))}
           </TabPanel>
-        </TabPanels>
+        </TabPanels> */}
       </Tabs>
     </div>
   );
