@@ -37,7 +37,7 @@ jobs:
 
       - name: Setup pnpm cache
         uses: actions/cache@v3
-        id: pnpm-cache
+        id: pnpm-cache-setup
         with:
           path: ${{ steps.pnpm-cache.outputs.pnpm_cache_dir }}
           key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
@@ -45,7 +45,7 @@ jobs:
             ${{ runner.os }}-pnpm-store-
 
       - name: Install dependencies
-        if: steps.pnpm-cache.outputs.cache-hit != 'true'
+        if: steps.pnpm-cache-setup.outputs.cache-hit != 'true'
         run: |
           cd starblaze-next
           pnpm install
