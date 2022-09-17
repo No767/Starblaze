@@ -15,7 +15,7 @@ const ModuleCommandsIndex: NextPage = () => {
 
 export async function getStaticPaths() {
   return {
-    paths: ["/commands/all"],
+    paths: ["/commands/anilist"],
     fallback: true,
   };
 }

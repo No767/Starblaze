@@ -1,4 +1,5 @@
 import type { AppProps } from "next/app";
+import type { NextPageContext } from "next";
 
 import { ChakraProvider } from "@chakra-ui/react";
 
@@ -8,10 +9,20 @@ import {
   Hydrate,
   QueryClient,
   QueryClientProvider,
+  DehydratedState,
 } from "@tanstack/react-query";
+
 import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
 
-function StarblazeApp({ Component, pageProps }: AppProps) {
+type PageProps = {
+  dehydratedState?: DehydratedState;
+};
+
+type ExtendedAppProps<P = {}> = {
+  err?: NextPageContext["err"];
+} & AppProps<P>;
+
+function StarblazeApp({ Component, pageProps }: ExtendedAppProps<PageProps>) {
   const [queryClient] = React.useState(() => new QueryClient());
   return (
     <QueryClientProvider client={queryClient}>
