@@ -1,6 +1,6 @@
 <div align=center>
 
-![Rin](./assets/rin-logo-200.png)
+![Rin](./assets/rin-logo-172.svg)
 
 # Starblaze
 
