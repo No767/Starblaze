@@ -15,8 +15,6 @@ const CommandsIndex: NextPage = () => {
   );
 };
 
-export default CommandsIndex;
-
 export async function getStaticProps() {
   const queryClient = new QueryClient();
   await queryClient.prefetchQuery(["moduleListData"], () => getModuleList());
@@ -27,3 +25,5 @@ export async function getStaticProps() {
     },
   };
 }
+
+export default CommandsIndex;

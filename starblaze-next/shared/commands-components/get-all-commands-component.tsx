@@ -1,4 +1,5 @@
 import React from "react";
+import NextLink from "next/link";
 import { useData } from "../hooks/getData";
 import {
   VStack,
@@ -9,9 +10,12 @@ import {
   AccordionItem,
   AccordionButton,
   AccordionPanel,
+  AccordionIcon,
+  Container,
   Heading,
-  Code,
+  Button,
 } from "@chakra-ui/react";
+import { MdOutlineCode } from "react-icons/md";
 
 export default function GetAllCommands() {
   const { data, isLoading } = useData();
@@ -25,30 +29,40 @@ export default function GetAllCommands() {
           All Commands
         </Text>
         <Text fontSize="xl">All of the commands listed for Rin</Text>
-        <Text fontSize="xl">
-          Commands Prefix: <Code>/</Code>
-        </Text>
+        <Text fontSize="lg">Total Commands: {data.count}</Text>
+        <NextLink href="/commands" passHref>
+          <Button
+            variant="outline"
+            leftIcon={<MdOutlineCode />}
+            borderColor="gray.500"
+            size="md"
+            as="a"
+          >
+            Commands
+          </Button>
+        </NextLink>
       </VStack>
 
-      <SimpleGrid columns={{ sm: 1, md: 1, lg: 1 }}>
+      <SimpleGrid columns={{ sm: 1, md: 1, lg: 1 }} pb={50}>
         {Object.keys(data.data).map((keyMain) => (
           <Accordion allowToggle pt={30} mx={25}>
-            <Box display="flex" borderWidth="1px" borderRadius="lg">
+            <Box borderWidth="1px" borderRadius="lg">
               <AccordionItem>
                 <AccordionButton>
-                  <Box maxW="lg" borderRadius="lg">
-                    {/* @ts-ignore */}
-                    <Heading as="h6" size="md" align="left">
+                  <Container maxW="9xl" textAlign="left">
+                    <Heading as="h6" size="md">
                       {data.data[keyMain].name}
                     </Heading>
-                    <Text align="left" pt={3}>
-                      {data.data[keyMain].description}
-                    </Text>
-                  </Box>
+                    <Text pt={3}>{data.data[keyMain].description}</Text>
+                  </Container>
+                  <AccordionIcon />
                 </AccordionButton>
+
                 <AccordionPanel pb={4}>
-                  <Text align="left">Module: {data.data[keyMain].module}</Text>
-                  <Text align="left">
+                  <Text align="left" pl={4}>
+                    Module: {data.data[keyMain].module}
+                  </Text>
+                  <Text align="left" pl={4}>
                     Parent Command: {data.data[keyMain].parent_name}
                   </Text>
                 </AccordionPanel>

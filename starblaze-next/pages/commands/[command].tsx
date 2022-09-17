@@ -1,8 +1,8 @@
 import type { NextPage } from "next";
 import { QueryClient, dehydrate } from "@tanstack/react-query";
+import { getDataModules } from "../../shared/hooks/getData";
 import NavBar from "../../shared/shared-components/navbar";
 import GetModuleCommands from "../../shared/commands-components/get-module-commands-component";
-import { getDataModules } from "../../shared/hooks/getData";
 
 const ModuleCommandsIndex: NextPage = () => {
   return (

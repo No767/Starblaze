@@ -3,14 +3,12 @@ import { dehydrate, QueryClient } from "@tanstack/react-query";
 import { getData } from "../../shared/hooks/getData";
 import NavBar from "../../shared/shared-components/navbar";
 import GetAllCommands from "../../shared/commands-components/get-all-commands-component";
-import Footer from "../../shared/shared-components/footer";
 
 const AllCommandsIndex: NextPage = () => {
   return (
     <div>
       <NavBar />
       <GetAllCommands />
-      <Footer />
     </div>
   );
 };
