@@ -38,3 +38,6 @@ next-env.d.ts
 # VSCode temp files
 .vscode/*
 .vscode
+
+# ENV vars
+.env

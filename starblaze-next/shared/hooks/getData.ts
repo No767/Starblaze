@@ -7,7 +7,7 @@ const getData = async () => {
     headers: { "Content-Type": "application/json" },
   };
   const fetchData = axios
-    .get("https://api.rinbot.live/commands/all", options)
+    .get(`${process.env.BACKEND_API_LINK_COMMANDS}/all`, options)
     .then(function (response) {
       return response.data;
     });
@@ -21,7 +21,7 @@ const getDataModules = async (endpoint: any) => {
     headers: { "Content-Type": "application/json" },
   };
   const fetchData = axios
-    .get(`https://api.rinbot.live/commands/${endpoint}`, options)
+    .get(`${process.env.BACKEND_API_LINK_COMMANDS}/${endpoint}`, options)
     .then(function (response) {
       return response.data;
     });
@@ -34,7 +34,7 @@ const getModuleList = async () => {
     headers: { "Content-Type": "application/json" },
   };
   const fetchModuleList = axios
-    .get("https://api.rinbot.live/modules/all", options)
+    .get(`${process.env.BACKEND_API_LINK}/modules/all`, options)
     .then(function (response) {
       return response.data;
     });
