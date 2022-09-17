@@ -1,27 +1,5 @@
 import React from "react";
-import {
-  Tabs,
-  TabList,
-  TabPanels,
-  Tab,
-  TabPanel,
-  Button,
-  VStack,
-  Text,
-  SimpleGrid,
-  Link,
-  Stat,
-  StatLabel,
-  StatNumber,
-  StatHelpText,
-  Show,
-  Hide,
-  Box,
-  Flex,
-  Container,
-  Spacer,
-  Code,
-} from "@chakra-ui/react";
+import { VStack, Text, Code } from "@chakra-ui/react";
 
 export default function CommandsBody() {
   return (

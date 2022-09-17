@@ -63,7 +63,7 @@ export default function IndexShowcase() {
             <VStack spacing={5} align="center" justify="center">
               <MdOutlineCollections size={124} />
               <Text fontSize="2xl" pt={15} mx={50} align="center">
-                10+ Services Integrated
+                20 Services Integrated
               </Text>
               <Text fontSize="xl" align="center">
                 Rin includes services from AniList, MangaDex, MyAnimeList, and

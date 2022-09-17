@@ -6,7 +6,7 @@ import { SiVercel, SiNextdotjs, SiFastapi } from "react-icons/si";
 export default function Footer() {
   return (
     <>
-      <VStack pt={100} align="center">
+      <VStack pt={50} align="center">
         <Text px={50}>Built with and powered by</Text>
         <HStack spacing={15}>
           <Link

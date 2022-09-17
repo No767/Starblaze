@@ -28,6 +28,19 @@ const getDataModules = async (endpoint: any) => {
   return fetchData;
 };
 
+const getModuleList = async () => {
+  const options = {
+    method: "GET",
+    headers: { "Content-Type": "application/json" },
+  };
+  const fetchModuleList = axios
+    .get("https://api.rinbot.live/modules/all", options)
+    .then(function (response) {
+      return response.data;
+    });
+  return fetchModuleList;
+};
+
 const useData = () => {
   return useQuery(["allRepoData"], () => getData());
 };
@@ -36,4 +49,15 @@ const useModuleData = (endpoint: string) => {
   return useQuery(["moduleData"], () => getDataModules(endpoint));
 };
 
-export { getData, useData, useModuleData, getDataModules };
+const useModuleListData = () => {
+  return useQuery(["moduleListData"], () => getModuleList());
+};
+
+export {
+  getData,
+  useData,
+  useModuleData,
+  getDataModules,
+  getModuleList,
+  useModuleListData,
+};
