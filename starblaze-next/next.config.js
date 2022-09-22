@@ -7,7 +7,6 @@ const nextConfig = {
       {
         // matching all API routes
         source: "/commands/:path*",
-        destination: "https://api.rinbot.live/:path*",
         headers: [
           { key: "Access-Control-Allow-Origin", value: "*" },
           {
