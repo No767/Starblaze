@@ -44,26 +44,28 @@ export default function GetAllCommands() {
       </VStack>
 
       <SimpleGrid columns={{ sm: 1, md: 1, lg: 1 }} pb={50}>
-        {Object.keys(data.data).map((keyMain) => (
+        {Object.keys(data.data).map((keyMainAllCommands) => (
           <Accordion allowToggle pt={30} mx={25}>
             <Box borderWidth="1px" borderRadius="lg">
               <AccordionItem>
                 <AccordionButton>
                   <Container maxW="9xl" textAlign="left">
                     <Heading as="h6" size="md">
-                      {data.data[keyMain].name}
+                      {data.data[keyMainAllCommands].name}
                     </Heading>
-                    <Text pt={3}>{data.data[keyMain].description}</Text>
+                    <Text pt={3}>
+                      {data.data[keyMainAllCommands].description}
+                    </Text>
                   </Container>
                   <AccordionIcon />
                 </AccordionButton>
 
                 <AccordionPanel pb={4}>
                   <Text align="left" pl={4}>
-                    Module: {data.data[keyMain].module}
+                    Module: {data.data[keyMainAllCommands].module}
                   </Text>
                   <Text align="left" pl={4}>
-                    Parent Command: {data.data[keyMain].parent_name}
+                    Parent Command: {data.data[keyMainAllCommands].parent_name}
                   </Text>
                 </AccordionPanel>
               </AccordionItem>

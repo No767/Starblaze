@@ -1,6 +1,7 @@
 import { useQuery } from "@tanstack/react-query";
 import axios from "axios";
-import url from "url";
+
+axios.defaults.baseURL = "https://api.rinbot.live";
 
 const getData = async () => {
   const options = {
@@ -8,7 +9,7 @@ const getData = async () => {
     headers: { "Content-Type": "application/json" },
   };
   const fetchData = axios
-    .get(`${process.env.BACKEND_API_LINK}/commands/all`, options)
+    .get("/commands/all", options)
     .then(function (response) {
       return response.data;
     });
@@ -16,21 +17,14 @@ const getData = async () => {
   return fetchData;
 };
 
-const getDataModules = async (endpoint: any) => {
-  var target = url.parse(endpoint.url, true).query.target;
-  var apiSubdomain;
-
-  if (target === "US") {
-    apiSubdomain = "api";
-  } else {
-    apiSubdomain = "api";
-  }
+const getDataModules = async (endpoint: string) => {
   const options = {
     method: "GET",
     headers: { "Content-Type": "application/json" },
+    params: { module: endpoint },
   };
   const fetchData = axios
-    .get(`https:///${apiSubdomain}.rinbot.live/commands/${endpoint}`, options)
+    .get("/commands/module", options)
     .then(function (response) {
       return response.data;
     });
@@ -43,7 +37,7 @@ const getModuleList = async () => {
     headers: { "Content-Type": "application/json" },
   };
   const fetchModuleList = axios
-    .get(`${process.env.BACKEND_API_LINK}/modules/all`, options)
+    .get("/modules/all", options)
     .then(function (response) {
       return response.data;
     });
