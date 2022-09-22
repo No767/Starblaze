@@ -1,6 +1,8 @@
 import { useQuery } from "@tanstack/react-query";
 import axios from "axios";
 
+axios.defaults.baseURL = "https://api.rinbot.live";
+
 const getData = async () => {
   axios.defaults.baseURL = "https://api.rinbot.live";
   const options = {
