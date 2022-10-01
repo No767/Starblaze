@@ -12,7 +12,7 @@ A complete rebuild of Rin's Site
 
 # Info
 
-[Rin](https://github.com/No767/Rin) used to have a site, and that was built using Next.js + TS as well. But the issue was that the old repo was starting to conflict with the different projects. Starblze is just the new repo for Rin's official website.
+[Rin](https://github.com/No767/Rin) used to have a site, and that was built using Next.js + TS as well. But the issue was that the old repo was starting to conflict with the different projects. Starblaze is just the new repo for Rin's official website.
 
 # Development
 
