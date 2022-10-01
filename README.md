@@ -4,7 +4,7 @@
 
 # Starblaze
 
-![GitHub package.json dependency version (subfolder of monorepo)](https://img.shields.io/github/package-json/dependency-version/No767/Starblaze/next?filename=starblaze-next%2Fpackage.json&label=Next.js&logo=nextdotjs) [![CodeQL](https://github.com/No767/Starblaze/actions/workflows/codeql.yml/badge.svg)](https://github.com/No767/Starblaze/actions/workflows/codeql.yml) ![GitHub](https://img.shields.io/github/license/No767/Starblaze?label=License&logo=github)
+![GitHub package.json dependency version (subfolder of monorepo)](https://img.shields.io/github/package-json/dependency-version/No767/Starblaze/next?filename=starblaze-next%2Fpackage.json&label=Next.js&logo=nextdotjs) [![CodeQL](https://github.com/No767/Starblaze/actions/workflows/codeql.yml/badge.svg)](https://github.com/No767/Starblaze/actions/workflows/codeql.yml) ![GitHub deployments](https://img.shields.io/github/deployments/No767/Starblaze/production?label=Vercel&logo=vercel) ![GitHub](https://img.shields.io/github/license/No767/Starblaze?label=License&logo=github)
 
 A complete rebuild of Rin's Site
 
