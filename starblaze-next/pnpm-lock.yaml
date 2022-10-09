@@ -5,7 +5,7 @@ specifiers:
   '@emotion/react': 11.10.4
   '@emotion/styled': 11.10.4
   '@tanstack/react-query': 4.10.3
-  '@tanstack/react-query-devtools': 4.10.4
+  '@tanstack/react-query-devtools': 4.11.0
   '@types/node': 18.7.14
   '@types/react': 18.0.21
   '@types/react-dom': 18.0.6
@@ -36,7 +36,7 @@ dependencies:
   react-icons: 4.4.0_react@18.2.0
 
 devDependencies:
-  '@tanstack/react-query-devtools': 4.10.4_vhepussragssjkevgznguhxexq
+  '@tanstack/react-query-devtools': 4.11.0_vhepussragssjkevgznguhxexq
   '@types/node': 18.7.14
   '@types/react': 18.0.21
   '@types/react-dom': 18.0.6
@@ -1725,8 +1725,8 @@ packages:
   /@tanstack/query-core/4.10.3:
     resolution: {integrity: sha512-+ME02sUmBfx3Pjd+0XtEthK8/4rVMD2jcxvnW9DSgFONpKtpjzfRzjY4ykzpDw1QEo2eoPvl7NS8J5mNI199aA==}
 
-  /@tanstack/react-query-devtools/4.10.4_vhepussragssjkevgznguhxexq:
-    resolution: {integrity: sha512-+V2wxeDyXYAUTSP/kUy6JsuFXDDHBouexBINaRCNTgPe0xcFP34syWAATVTvyarpqgYhIYLJtkYzT1JL2wM8TQ==}
+  /@tanstack/react-query-devtools/4.11.0_vhepussragssjkevgznguhxexq:
+    resolution: {integrity: sha512-g/414SruE0TEp4jeMYxVUSXGXCc+zMY9j0gB8Q6B91gmyPseNqs9WLkVrqxRXoQDyRvDcphVOaEANNygGx+zGg==}
     peerDependencies:
       '@tanstack/react-query': 4.10.3
       react: ^16.8.0 || ^17.0.0 || ^18.0.0
