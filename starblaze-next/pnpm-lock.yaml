@@ -13,7 +13,7 @@ specifiers:
   eslint: 8.27.0
   eslint-config-next: 12.3.2
   framer-motion: 7.6.5
-  husky: 8.0.1
+  husky: 8.0.2
   next: 12.3.2
   next-seo: 5.14.0
   prettier: 2.7.1
@@ -42,7 +42,7 @@ devDependencies:
   '@types/react-dom': 18.0.8
   eslint: 8.27.0
   eslint-config-next: 12.3.2_rmayb2veg2btbq6mbmnyivgasy
-  husky: 8.0.1
+  husky: 8.0.2
   prettier: 2.7.1
   typescript: 4.8.4
 
@@ -2869,8 +2869,8 @@ packages:
       react-is: 16.13.1
     dev: false
 
-  /husky/8.0.1:
-    resolution: {integrity: sha512-xs7/chUH/CKdOCs7Zy0Aev9e/dKOMZf3K1Az1nar3tzlv0jfqnYtu235bstsWTmXOR0EfINrPa97yy4Lz6RiKw==}
+  /husky/8.0.2:
+    resolution: {integrity: sha512-Tkv80jtvbnkK3mYWxPZePGFpQ/tT3HNSs/sasF9P2YfkMezDl3ON37YN6jUUI4eTg5LcyVynlb6r4eyvOmspvg==}
     engines: {node: '>=14'}
     hasBin: true
     dev: true
