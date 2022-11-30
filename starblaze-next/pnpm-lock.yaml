@@ -6,7 +6,7 @@ specifiers:
   '@emotion/styled': 11.10.5
   '@tanstack/react-query': 4.16.1
   '@tanstack/react-query-devtools': 4.16.1
-  '@types/node': 18.11.9
+  '@types/node': 18.11.10
   '@types/react': 18.0.25
   '@types/react-dom': 18.0.9
   axios: 1.1.3
@@ -37,7 +37,7 @@ dependencies:
 
 devDependencies:
   '@tanstack/react-query-devtools': 4.16.1_makdk7ivkz7rbnnozofqroz2qy
-  '@types/node': 18.11.9
+  '@types/node': 18.11.10
   '@types/react': 18.0.25
   '@types/react-dom': 18.0.9
   eslint: 8.28.0
@@ -1787,8 +1787,8 @@ packages:
     resolution: {integrity: sha512-RoZphVtHbxPZizt4IcILciSWiC6dcn+eZ8oX9IWEYfDMcocdd42f7NPI6fQj+6zI8y4E0L7gu2pcZKLGTRaV9Q==}
     dev: false
 
-  /@types/node/18.11.9:
-    resolution: {integrity: sha512-CRpX21/kGdzjOpFsZSkcrXMGIBWMGNIHXXBVFSH+ggkftxg+XYP20TESbh+zFvFj3EQOl5byk0HTRn1IL6hbqg==}
+  /@types/node/18.11.10:
+    resolution: {integrity: sha512-juG3RWMBOqcOuXC643OAdSA525V44cVgGV6dUDuiFtss+8Fk5x1hI93Rsld43VeJVIeqlP9I7Fn9/qaVqoEAuQ==}
     dev: true
 
   /@types/parse-json/4.0.0:
