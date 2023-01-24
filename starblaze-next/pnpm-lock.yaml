@@ -9,7 +9,7 @@ specifiers:
   '@types/node': 18.11.18
   '@types/react': 18.0.27
   '@types/react-dom': 18.0.10
-  axios: 1.2.3
+  axios: 1.2.4
   eslint: 8.32.0
   eslint-config-next: 12.3.4
   framer-motion: 8.5.2
@@ -27,7 +27,7 @@ dependencies:
   '@emotion/react': 11.10.5_kwq6a2andav43g6yddsnpzr2oy
   '@emotion/styled': 11.10.5_4stqedvoyisxsmz3hr2bqygw74
   '@tanstack/react-query': 4.23.0_biqbaboplfbrettd7655fr4n2y
-  axios: 1.2.3
+  axios: 1.2.4
   framer-motion: 8.5.2_biqbaboplfbrettd7655fr4n2y
   next: 12.3.4_ir3quccc6i62x6qn6jjhyjjiey
   next-seo: 5.15.0_bhgafntz2ozm43l35i5qtimxry
@@ -2034,8 +2034,8 @@ packages:
     engines: {node: '>=4'}
     dev: true
 
-  /axios/1.2.3:
-    resolution: {integrity: sha512-pdDkMYJeuXLZ6Xj/Q5J3Phpe+jbGdsSzlQaFVkMQzRUL05+6+tetX8TV3p4HrU4kzuO9bt+io/yGQxuyxA/xcw==}
+  /axios/1.2.4:
+    resolution: {integrity: sha512-lIQuCfBJvZB/Bv7+RWUqEJqNShGOVpk9v7P0ZWx5Ip0qY6u7JBAU6dzQPMLasU9vHL2uD8av/1FDJXj7n6c39w==}
     dependencies:
       follow-redirects: 1.15.1
       form-data: 4.0.0
