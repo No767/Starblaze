@@ -44,8 +44,8 @@ devDependencies:
     specifier: 4.32.6
     version: 4.32.6(@tanstack/react-query@4.32.6)(react-dom@18.2.0)(react@18.2.0)
   '@types/node':
-    specifier: 18.17.2
-    version: 18.17.2
+    specifier: 18.17.3
+    version: 18.17.3
   '@types/react':
     specifier: 18.2.18
     version: 18.2.18
@@ -1623,8 +1623,8 @@ packages:
     resolution: {integrity: sha512-RoZphVtHbxPZizt4IcILciSWiC6dcn+eZ8oX9IWEYfDMcocdd42f7NPI6fQj+6zI8y4E0L7gu2pcZKLGTRaV9Q==}
     dev: false
 
-  /@types/node@18.17.2:
-    resolution: {integrity: sha512-wBo3KqP/PBqje5TI9UTiuL3yWfP6sdPtjtygSOqcYZWT232dfDeDOnkDps5wqZBP9NgGgYrNejinl0faAuE+HQ==}
+  /@types/node@18.17.3:
+    resolution: {integrity: sha512-2x8HWtFk0S99zqVQABU9wTpr8wPoaDHZUcAkoTKH+nL7kPv3WUI9cRi/Kk5Mz4xdqXSqTkKP7IWNoQQYCnDsTA==}
     dev: true
 
   /@types/parse-json@4.0.0:
